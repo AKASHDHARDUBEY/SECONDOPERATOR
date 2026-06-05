@@ -11,7 +11,7 @@ export default function Contact() {
       <section className="pt-32 pb-20 px-6 max-w-4xl mx-auto text-center">
         <motion.h1 
           initial="hidden" animate="visible" variants={fadeIn}
-          className="text-4xl md:text-6xl font-bold tracking-tight mb-6"
+          className="text-5xl md:text-7xl font-bold tracking-tight mb-6"
         >
           Building. Experimenting. <br className="hidden md:block"/>
           <span className="text-accent">Learning.</span>
@@ -21,22 +21,22 @@ export default function Contact() {
       <section className="max-w-xl mx-auto px-6">
         <motion.div 
           initial="hidden" animate="visible" variants={fadeIn} transition={{ delay: 0.2 }}
-          className="p-8 md:p-12 rounded-3xl bg-zinc-950 border border-white/5 text-center"
+          className="p-10 md:p-14 rounded-3xl bg-zinc-950 border border-white/5 text-center shadow-xl"
         >
-          <div className="space-y-8">
+          <div className="space-y-10">
             <div>
-              <h2 className="text-xs font-semibold tracking-widest text-secondary uppercase mb-2">Reach us</h2>
+              <h2 className="text-sm font-semibold tracking-widest text-accent uppercase mb-3">Reach us</h2>
               <a 
                 href="mailto:reachishaanmalik@gmail.com" 
-                className="text-xl md:text-2xl font-medium hover:text-accent transition-colors"
+                className="text-2xl md:text-3xl font-semibold hover:text-accent transition-colors block text-white"
               >
                 reachishaanmalik@gmail.com
               </a>
             </div>
 
-            <div>
-              <h2 className="text-xs font-semibold tracking-widest text-secondary uppercase mb-2">Domain</h2>
-              <p className="text-lg text-white/80 font-light">
+            <div className="pt-4 border-t border-white/5">
+              <h2 className="text-sm font-semibold tracking-widest text-accent uppercase mb-3">Domain</h2>
+              <p className="text-xl text-white font-medium">
                 secondoperator.in
               </p>
             </div>

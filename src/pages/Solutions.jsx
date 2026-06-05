@@ -49,7 +49,7 @@ export default function Solutions() {
       <section className="pt-32 pb-20 px-6 max-w-4xl mx-auto text-center">
         <motion.h1 
           initial="hidden" animate="visible" variants={fadeIn}
-          className="text-4xl md:text-6xl font-bold tracking-tight mb-6"
+          className="text-5xl md:text-7xl font-bold tracking-tight mb-6"
         >
           What can an AI coworker <br className="hidden md:block"/>
           <span className="text-accent">do today?</span>

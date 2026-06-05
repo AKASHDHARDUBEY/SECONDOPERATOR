@@ -15,10 +15,10 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/5">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <Link to="/" className="text-xl font-medium tracking-tight hover:text-accent transition-colors duration-300">
-          SECOND<span className="text-secondary">OPERATOR</span>
+        <Link to="/" className="text-3xl font-extrabold tracking-wider hover:text-accent transition-colors duration-300">
+          SECOND <span className="text-secondary">OPERATOR</span>
         </Link>
-        <div className="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <div className="hidden md:flex items-center space-x-10 text-lg font-semibold">
           {links.map(link => (
             <Link
               key={link.name}
