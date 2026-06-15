@@ -29,7 +29,7 @@ function doPost(e) {
 */
 
 // Optional Webhook URL (Replace this with deployed Google Apps Script URL)
-const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbxcFDvEewAe4j6FRgOJK6XN4-XSpsH6pCC2loWvPl19g-mZ0g9FsfpH3DAV8qbLCGwx/exec';
+const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbxagWvt9lkFFWPHlQKpsaggUCfkBEQhQM3XrGxCq_ictHp-bFpAYkD60shQn2JOUgNeoA/exec';
 
 export default function AutomationForm() {
   const [formData, setFormData] = useState({
