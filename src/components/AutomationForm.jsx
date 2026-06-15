@@ -31,7 +31,7 @@ function doPost(e) {
 */
 
 // Optional Webhook URL (Replace this with deployed Google Apps Script URL)
-const WEBHOOK_URL = '';
+const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbzUrZ9sXHQHx2o9Qc3MEQqQAIwcfYcy5d5dEvEm3_cWuIkcbQLU1davy1tC50kML6Fq/exec';
 
 export default function AutomationForm() {
   const [formData, setFormData] = useState({
@@ -167,10 +167,7 @@ export default function AutomationForm() {
         // Submit to Google Sheets via Apps Script Webhook URL
         await fetch(WEBHOOK_URL, {
           method: 'POST',
-          mode: 'no-cors', // Apps Script requires no-cors sometimes or direct CORS setup
-          headers: {
-            'Content-Type': 'application/json'
-          },
+          mode: 'no-cors',
           body: JSON.stringify(payload)
         });
       } else {
